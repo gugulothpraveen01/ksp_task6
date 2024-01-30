@@ -1,0 +1,26 @@
+// Create Table in Database Test
+
+use Test
+CREATE TABLE Customers
+(
+  Name varchar(50),
+  Age  int
+);
+
+
+
+// Insert Values in the Table customers
+INSERT INTO Customers (Name,Age)
+VALUES
+('Praveen',22),
+('Chandu',20);
+
+
+// Update Values in the Table Customers
+UPDATE Customers
+set Name = 'Mouli'
+WHERE Name = 'Chandu'
+
+// Delete Values in the Table Customers
+DELETE FROM Customers
+WHERE Name = 'Mouli'
